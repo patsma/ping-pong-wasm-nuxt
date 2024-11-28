@@ -11,6 +11,7 @@ import init, * as wasm from '/public/wasm_ping_pong.js';
 onMounted(async () => {
   try {
     // Initialize the Wasm module
+
     await init({
       path: '/public/wasm_ping_pong_bg.wasm',
     });
